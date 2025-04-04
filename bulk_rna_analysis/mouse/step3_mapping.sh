@@ -1,0 +1,1 @@
+for i in `less file.list`;do echo $i ; hisat2 -t -x /data/fengw/utr/bulk_raw/DB/mm10_index -1 /data/fengw/utr/bulk_raw/clean_data/${i}_R1.clean.fq.gz -2 /data/fengw/utr/bulk_raw/clean_data/${i}_R2.clean.fq.gz -S /data/fengw/utr/bulk_raw/bam_data/${i}.sam ;done
